@@ -89,12 +89,12 @@ function submitForm() {
             document.getElementById("launchStatus").innerText = "Shuttle Not Ready for Launch"
             document.getElementById("launchStatus").style.color = "red";
             document.getElementById("fuelStatus").innerText = "Fuel level too low for launch";
-          } else if (cargoMassNum > 10000 && fuelLevelNum < 10000) {
+          } else if (cargoMassNum > 10000 && fuelLevelNum > 10000) {
              document.getElementById("facultyItems").style.visibility = "visible";
              document.getElementById("cargoStatus").innerText = "Cargo mass low enough for launch";
              document.getElementById("launchStatus").innerText = "Shuttle Not Ready for Launch"
              document.getElementById("launchStatus").style.color = "red";
-             document.getElementById("fuelStatus").innerText = "Fuel level too low for launch";
+             document.getElementById("fuelStatus").innerText = "Fuel level high enough for launch";
           } else if (cargoMassNum < 10000 && fuelLevelNum > 10000) {
              document.getElementById("cargoStatus").innerText = "Cargo mass low enough for launch";
              document.getElementById("fuelStatus").innerText = "Fuel level high enough for launch";
